@@ -1,16 +1,14 @@
-const frutas = ["Manga", "Morango", "Jabuticaba", "jaca", "Uva", "Melão", "Cereja", "joão Bolão", "Caqui"];
+const frutas = ["Manga", "Morango", "Jabuticaba", "jaca", "Uva", "Melão", "Cereja", "João Bolão", "Caqui"];
+const vegetais = ["Abóbora", "Rabanete", "Cenoura", "Batata-doce", "Pepino", "Palmito", "Mandioca", "Cogumelo", "Nabo",];
 
-const vegetais = ["Rabanete", "Cenoura", "Batata-doce", "Pepino", "Palmito", "Mandioca", "Cogumelo", "Ábobora", "Nabo",];
-
-
-function Frutas() {
-  const frutasElement = document.getElementById("mostrarFrutas");
-  const frutasOrdenados = frutas.sort();
-  frutasElement.innerHTML = frutasOrdenados.join(", ");
+const frutasElement = document.getElementById("mostrarFrutas");
+function MostrarFrutas(){
+    frutasOrdenadas = frutas.sort();
+    frutasElement.innerHTML = frutasOrdenadas.join(" - ");
 }
 
-function vegetais() {
-  const vegetaisElement = document.getElementById("vegetais");
-  const vegetaisOrdenados = vegetais.sort();
-  vegetaisElement.innerHTML = vegetaisOrdenados.join(", ");
+const vegetaisElement = document.getElementById("mostrarVegetais");
+function MostrarVegetais(){
+    vegetaisOrdenados = vegetais.sort();
+    vegetaisElement.innerHTML = vegetaisOrdenados.join(" * ");
 }
